@@ -5,8 +5,8 @@ namespace InstaDevFinal.Interfaces
 {
     public interface IUsuario
     {
-         List<Usuario> LerTodos();
+         List<string> LerTodos();
 
-         void Alterar(Post p);
+         void Deletar(int Id_post);
     }
 }
