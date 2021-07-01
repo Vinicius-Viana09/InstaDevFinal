@@ -7,6 +7,10 @@ namespace InstaDevFinal.Models
 {
     public class Usuario : InstaDevBase, IUsuario
     {
+        private string Nome { get; set; }
+
+        private string Username { get; set; }
+        
         private string imagem { get; set; }
 
         private string texto_post { get; set; }
@@ -31,10 +35,12 @@ namespace InstaDevFinal.Models
 
         }
 
-        public List<string> LerTodos()
+        public List<string> LerTodosPost()
         {
             List<string> posts = new List<string>();
             string[] linhas = File.ReadAllLines(CAMINHO);
+            List<Usuario> usuarios = new List<Usuario>();
+            string[] linhas_usuario = File.ReadAllLines(CAMINHO);
 
             foreach (var item in linhas)
             {
@@ -49,7 +55,22 @@ namespace InstaDevFinal.Models
             }
             return posts;
         }
+        public List<Usuario> LerTodosUsuarios()
+        {
+            List<Usuario> usuarios = new List<Usuario>();
+            string[] linhas_usuario = File.ReadAllLines(CAMINHO);
 
+            foreach (var item in linhas_usuario)
+            {
+                string[] linha = item.Split(";");
+                Usuario usuario_dados = new Usuario();
+                usuario_dados.Nome = linha[0];
+                usuario_dados.Username = linha[1];
+
+                usuarios.Add(usuario_dados);
+            }
+            return usuarios;
+        }
 
         public void Deletar(int Id_post)
         {

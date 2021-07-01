@@ -149,10 +149,17 @@ hr{
     padding-left: 8px;
 }
 
+.box_texto_post{
+    display: flex;
+    width: 100%;
+    margin: 12px 0 12px 0;
+}
+
 .contador_curtidas{
     font-family: 'Roboto', sans-serif;
     font-size: 15px;
     font-weight: 700;
+    margin-bottom: 10px;
 }
 
 .nome_usuario_comentario{
