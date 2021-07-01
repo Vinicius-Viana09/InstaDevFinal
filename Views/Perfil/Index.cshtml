@@ -44,10 +44,15 @@
                 <img src=@coisa.imagem alt="Foto do Post">
                 <div class="box_post">
                     <div class="box_info_posts">
-                        <img src="assets/thank-you 4.png" alt="Imagem de Perfil">
-                        <div class="box_local_post">
-                            <span class="nome_usuario">@item.Nome</span>
-                            <span class="localizacao">Rio de Janeiro</span>
+                        <div class="box_info_postagem">
+                            <img src="assets/thank-you 4.png" alt="Imagem de Perfil">
+                            <div class="box_local_post">
+                                <span class="nome_usuario">@item.Nome</span>
+                                <span class="localizacao">Rio de Janeiro</span>
+                            </div>
+                        </div>
+                        <div class="deletar">
+                            <a asp-area="" asp-controller="Perfil" asp-action="Excluir"><i class="fas fa-trash"></i></a>
                         </div>
                     </div>
                     <div class="box_curtir">

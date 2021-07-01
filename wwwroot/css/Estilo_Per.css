@@ -72,6 +72,7 @@ header{
     justify-content: space-between;
     width: 320px;
 }
+
 .box_sair{
     display: flex;
     justify-content: space-between;
@@ -130,9 +131,10 @@ hr{
 .box_post_organizacao{
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    width: 68vw;
+    justify-content: space-between;
+    width: 60vw;
     height: auto;
+    border: 1px solid #DCDCDC;
 }
 
 .box_post{
@@ -146,6 +148,17 @@ hr{
 .box_info_posts{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    width: 470px;
+}
+
+.box_info_postagem{
+    display: flex;
+    align-items: center;
+}
+
+.deletar{
+    padding: 0 5px 100px 0;
 }
 
 .box_local_post{
