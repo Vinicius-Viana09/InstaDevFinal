@@ -72,6 +72,20 @@ header{
     justify-content: space-between;
     width: 320px;
 }
+.box_sair{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box_sair button{
+    width: 125px;
+    height: 25px;
+    border-radius: 10px;
+    border: 1px solid #DCDCDC;
+    font-size: 15px;
+    font-family: 'Roboto', sans-serif;
+}
 
 .nome_usuario{
     font-family: 'Roboto', sans-serif;
