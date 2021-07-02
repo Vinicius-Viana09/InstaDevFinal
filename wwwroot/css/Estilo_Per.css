@@ -52,6 +52,11 @@ header{
     align-items: center;
 }
 
+.img_perfil i{
+    font-size: 154px;
+}
+
+
 .box_info{
     display: flex;
     flex-direction: column;
@@ -204,7 +209,7 @@ hr{
 
 
 .ajustar_tamanho_comentario{
-    width: 100%;
+    width: 95%;
     margin-bottom: 3%;
     display: flex;
     justify-content: space-evenly;

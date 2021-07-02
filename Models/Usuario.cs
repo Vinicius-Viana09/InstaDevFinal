@@ -39,8 +39,6 @@ namespace InstaDevFinal.Models
         {
             List<string> posts = new List<string>();
             string[] linhas = File.ReadAllLines(CAMINHO);
-            List<Usuario> usuarios = new List<Usuario>();
-            string[] linhas_usuario = File.ReadAllLines(CAMINHO);
 
             foreach (var item in linhas)
             {
