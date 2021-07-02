@@ -8,7 +8,7 @@
     <section class="container_perfil">
         <div class="box_perfil">
             <div class="img_perfil">
-                <a asp-area="" asp-controller ="Perfil" asp-action="Index"><i class="fas fa-user-circle"></i></a>
+                <a asp-area="" asp-controller="Perfil" asp-action="Index"><i class="fas fa-user-circle"></i></a>
             </div>
 
             <div class="box_info">
@@ -20,7 +20,8 @@
                 </div>
                 <div class="box_sair">
                     <span class="nome_usuario">@item.Nome</span>
-                    <button>Sair</button>
+                    <a asp-area="" asp-controller="EditarPerfil" asp-action="Index">Editar Perfil</a>
+                    <a asp-area="" asp-controller="Login" asp-action="Logout">Sair</a>
                 </div>
             </div>
         </div>
@@ -40,58 +41,62 @@
         <div class="box_post_organizacao">
             @foreach (var coisa in ViewBag.Posts)
             {
+                @if (ViewBag.Posts != null)
+                {
 
-                <img src=@coisa.imagem alt="Foto do Post">
-                <div class="box_post">
-                    <div class="box_info_posts">
-                        <div class="box_info_postagem">
-                            <img src="assets/thank-you 4.png" alt="Imagem de Perfil">
-                            <div class="box_local_post">
-                                <span class="nome_usuario">@item.Nome</span>
-                                <span class="localizacao">Rio de Janeiro</span>
+                    <img src=@coisa.imagem alt="Foto do Post">
+                    <div class="box_post">
+                        <div class="box_info_posts">
+                            <div class="box_info_postagem">
+                                <img src="assets/thank-you 4.png" alt="Imagem de Perfil">
+                                <div class="box_local_post">
+                                    <span class="nome_usuario">@item.Nome</span>
+                                    <span class="localizacao">Rio de Janeiro</span>
+                                </div>
+                            </div>
+                            <div class="deletar">
+                                <a asp-area="" asp-controller="Perfil" asp-action="Excluir"><i class="fas fa-trash"></i></a>
                             </div>
                         </div>
-                        <div class="deletar">
-                            <a asp-area="" asp-controller="Perfil" asp-action="Excluir"><i class="fas fa-trash"></i></a>
+                        <div class="box_curtir">
+                            <img src="assets/like.png" alt="Like">
+                            <img src="assets/comentario.png" alt="Comentarios">
+                        </div>
+
+                        <div class="box_texto_post">
+                            <span class="nome_usuario_comentario">@item.Username</span>
+                            <p class="comentario">@coisa.texto_post</p>
+                        </div>
+
+                        <span class="contador_curtidas">1954 Curtidas</span>
+
+                        <div class="box_comentario">
+                            <div class="ajustar_tamanho_comentario">
+                                <span class="nome_usuario_comentario">fausto_silva</span>
+                                <span class="comentario">Esse cara é fera bixo!!</span>
+                                <img src="assets/like.png" alt="Like">
+                            </div>
+                            <div class="ajustar_tamanho_comentario">
+                                <span class="nome_usuario_comentario">yes_baby</span>
+                                <span class="comentario">thank you</span>
+                                <img src="assets/like.png" alt="Like">
+                            </div>
+                            <div class="ajustar_tamanho_comentario">
+                                <span class="nome_usuario_comentario">adriano_stark</span>
+                                <span class="comentario">Quando eu adormecer vou sonhar com você. É sempre você</span>
+                                <img src="assets/like.png" alt="Like">
+                            </div>
+                            <div class="ajustar_tamanho_comentario">
+                                <span class="nome_usuario_comentario">yes_baby</span>
+                                <span class="comentario">Yes baby!!</span>
+                                <img src="assets/like.png" alt="Like">
+                            </div>
                         </div>
                     </div>
-                    <div class="box_curtir">
-                        <img src="assets/like.png" alt="Like">
-                        <img src="assets/comentario.png" alt="Comentarios">
-                    </div>
-
-                    <div class="box_texto_post">
-                        <span class="nome_usuario_comentario">@item.Username</span>
-                        <p class="comentario">@coisa.texto_post</p>
-                    </div>
-
-                    <span class="contador_curtidas">1954 Curtidas</span>
-
-                    <div class="box_comentario">
-                        <div class="ajustar_tamanho_comentario">
-                            <span class="nome_usuario_comentario">fausto_silva</span>
-                            <span class="comentario">Esse cara é fera bixo!!</span>
-                            <img src="assets/like.png" alt="Like">
-                        </div>
-                        <div class="ajustar_tamanho_comentario">
-                            <span class="nome_usuario_comentario">yes_baby</span>
-                            <span class="comentario">thank you</span>
-                            <img src="assets/like.png" alt="Like">
-                        </div>
-                        <div class="ajustar_tamanho_comentario">
-                            <span class="nome_usuario_comentario">adriano_stark</span>
-                            <span class="comentario">Quando eu adormecer vou sonhar com você. É sempre você</span>
-                            <img src="assets/like.png" alt="Like">
-                        </div>
-                        <div class="ajustar_tamanho_comentario">
-                            <span class="nome_usuario_comentario">yes_baby</span>
-                            <span class="comentario">Yes baby!!</span>
-                            <img src="assets/like.png" alt="Like">
-                        </div>
-                    </div>
-
-
-                </div>
+                }else
+                {
+                 <span class="box_sem_publi">Esse perfil ainda não fez nenhuma publicação</span>   
+                }
             }
         </div>
     </section>

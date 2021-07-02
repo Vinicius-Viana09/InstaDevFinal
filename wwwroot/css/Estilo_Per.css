@@ -84,13 +84,11 @@ header{
     align-items: center;
 }
 
-.box_sair button{
-    width: 125px;
-    height: 25px;
-    border-radius: 10px;
-    border: 1px solid #DCDCDC;
-    font-size: 15px;
+.box_sair a{
     font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    font-size: 13px;
+    color: #2686CC;
 }
 
 .nome_usuario{
@@ -219,4 +217,13 @@ hr{
 .ajustar_tamanho_comentario img{
     width: 24px;
     height: 21px;
+}
+
+.box_sem_publi{
+    font-family: 'Roboto', sans-serif;
+    font-size: 65px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
