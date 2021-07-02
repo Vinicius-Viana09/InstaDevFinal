@@ -2,8 +2,8 @@ using InstaDevFinal.Models;
 
 namespace InstaDevFinal.Interfaces
 {
-    public interface ICadastro
+    public interface IUsuario
     {
-         void Criar(Cadastro c);
+         void Criar(Usuario u);
     }
 }

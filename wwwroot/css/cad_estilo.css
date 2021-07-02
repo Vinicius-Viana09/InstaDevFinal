@@ -1,0 +1,107 @@
+.cad_container{
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.cad_img_logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+.cad_p_1{
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: normal;
+    color: #909090;
+    width: 209px;
+    height: 50px;
+    margin: auto;
+    text-align: center;
+}
+
+.cad_box_info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cad_input{
+    height: 35px;
+    width: 267px;
+    margin: 7px;
+}
+
+.cad_botao_cadastrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 275px;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    background-color: #2686CC;
+    font-family: 'Segoe UI';
+    color: white;
+    font-size: 12px;
+    border: none;
+}
+
+.cad_p_2{
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    color: #909090;
+    width: 209px;
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+.cad_box_conta{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.cad_p_3{
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+    color: #353535;
+    width: 209px;
+    height: 50px;
+    margin: 20px;
+    text-align: center;
+}
+
+.cad_h1{
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: normal;
+    color: #353535;
+}
+
+.cad_link{
+    margin-left: 5px;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    font-style: normal;
+    color: #2686CC;
+    font-weight: bolder;
+    text-decoration: none
+}
+
+.cad_download{
+    margin: auto;
+}

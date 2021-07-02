@@ -1,0 +1,49 @@
+namespace InstaDevFinal.Views.Cadastro
+{
+public class Index.cshtml
+{
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="cad_estilo.css">
+</head>
+
+<body>
+    <main class="cad_container">
+        <section class="cad_box_cadastro">
+            <img class="cad_img_logo" src="assets/Instadev.png" alt="Logo">
+
+            <p class="cad_p_1">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
+            <div class="cad_box_info">
+                <input class="cad_input" name="NomeCompleto" type="text" placeholder="Nome Completo">
+                <input class="cad_input" name="NomeUsuario" type="text" placeholder="Nome de Usuário">
+                <input class="cad_input" name="Email" type="email" placeholder="Email">
+                <input class="cad_input" name="Senha" type="password" placeholder="Senha">
+                <button class="cad_botao_cadastrar">Cadastre-se</button>
+                <p class="cad_p_2">Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de
+                    Cookies.</p>
+            </div>
+        </section>
+
+        <div class="cad_box_conta">
+            <h1 class="cad_h1">Tem uma conta?</h1>
+            <a asp-area="" asp-controller="Cadastro" asp-action="Cadastrar" class="cad_link">Conecte-se</a>
+        </div>
+
+        <p class="cad_p_3">Obtenha o aplicativo.</p>
+
+        <div class="cad_download">
+            <img src="assets/app_store 1.png" alt="App Store">
+            <img src="assets/google_play 1.png" alt="Google Play">
+        </div>
+    </main>
+</body>
+
+</html>
+}
+}
