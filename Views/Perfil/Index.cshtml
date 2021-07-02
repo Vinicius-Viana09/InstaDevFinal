@@ -3,8 +3,6 @@
     ViewData["Title"] = "Perfil";
 }
 
-@foreach (var item in ViewBag.Usuarios)
-{
     <section class="container_perfil">
         <div class="box_perfil">
             <div class="img_perfil">
@@ -12,14 +10,14 @@
             </div>
 
             <div class="box_info">
-                <h1 class="username">@item.Username</h1>
+                <h1 class="username">@ViewBag.Usuario.Username</h1>
                 <div class="box_info_perfil">
                     <span>0 Publicações</span>
                     <span>128 Seguindo</span>
                     <span>214 Seguidores</span>
                 </div>
                 <div class="box_sair">
-                    <span class="nome_usuario">@item.Nome</span>
+                    <span class="nome_usuario">@ViewBag.Usuario.Nome</span>
                     <a asp-area="" asp-controller="EditarPerfil" asp-action="Index">Editar Perfil</a>
                     <a asp-area="" asp-controller="Login" asp-action="Logout">Sair</a>
                 </div>
@@ -50,7 +48,7 @@
                             <div class="box_info_postagem">
                                 <img src="assets/thank-you 4.png" alt="Imagem de Perfil">
                                 <div class="box_local_post">
-                                    <span class="nome_usuario">@item.Nome</span>
+                                    <span class="nome_usuario">@ViewBag.Usuario.Nome</span>
                                     <span class="localizacao">Rio de Janeiro</span>
                                 </div>
                             </div>
@@ -64,7 +62,7 @@
                         </div>
 
                         <div class="box_texto_post">
-                            <span class="nome_usuario_comentario">@item.Username</span>
+                            <span class="nome_usuario_comentario">@ViewBag.Usuario.Username</span>
                             <p class="comentario">@coisa.texto_post</p>
                         </div>
 
@@ -100,4 +98,3 @@
             }
         </div>
     </section>
-}

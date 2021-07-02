@@ -53,7 +53,7 @@ namespace InstaDevFinal.Models
             }
             return posts;
         }
-        public List<Usuario> LerTodosUsuarios()
+        public List<Usuario> LerTodosUsuarios(int Id_usuario)
         {
             List<Usuario> usuarios = new List<Usuario>();
             string[] linhas_usuario = File.ReadAllLines(CAMINHO);
@@ -61,11 +61,15 @@ namespace InstaDevFinal.Models
             foreach (var item in linhas_usuario)
             {
                 string[] linha = item.Split(";");
+                if (linha[0] == Id_usuario.ToString())
+                {    
                 Usuario usuario_dados = new Usuario();
-                usuario_dados.Nome = linha[0];
-                usuario_dados.Username = linha[1];
-
+                usuario_dados.Nome = linha[1];
+                usuario_dados.Username = linha[2];
+                
                 usuarios.Add(usuario_dados);
+                }
+
             }
             return usuarios;
         }
