@@ -11,6 +11,8 @@ namespace InstaDevFinal.Models
         public string NomeUsuario { get; set; }
         public string Senha { get; set; }
 
+        public string IdUsuario { get; set; }
+
         public const string CAMINHO = "Database/Usuario.csv";
 
         public Usuario()

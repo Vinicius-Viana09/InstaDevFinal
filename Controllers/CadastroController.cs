@@ -13,6 +13,7 @@ namespace InstaDevFinal.Controllers
             return View();
         }
 
+        [Route("Cadastrar")]
         public IActionResult Cadastrar(IFormCollection form)
         {
             Usuario novoUsuario = new Usuario();
@@ -20,7 +21,7 @@ namespace InstaDevFinal.Controllers
 
 
 
-            novoUsuario.IdUsuario = rdn.Next(999999999);
+            novoUsuario.IdUsuario = rdn.Next(999999999).ToString();
             novoUsuario.NomeCompleto = form["NomeCompleto"];
             novoUsuario.NomeUsuario = form["NomeUsuario"];
             novoUsuario.Email = form["Email"];

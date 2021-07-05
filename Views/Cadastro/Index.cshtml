@@ -19,15 +19,17 @@ public class Index.cshtml
             <img class="cad_img_logo" src="assets/Instadev.png" alt="Logo">
 
             <p class="cad_p_1">Cadastre-se para ver fotos e vídeos dos seus amigos.</p>
-            <div class="cad_box_info">
-                <input class="cad_input" name="NomeCompleto" type="text" placeholder="Nome Completo">
-                <input class="cad_input" name="NomeUsuario" type="text" placeholder="Nome de Usuário">
-                <input class="cad_input" name="Email" type="email" placeholder="Email">
-                <input class="cad_input" name="Senha" type="password" placeholder="Senha">
-                <button class="cad_botao_cadastrar">Cadastre-se</button>
-                <p class="cad_p_2">Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de
-                    Cookies.</p>
-            </div>
+            <form action='@Url.Action("Cadastrar")' method="POST">
+                <div class="cad_box_info">
+                    <input class="cad_input" name="NomeCompleto" type="text" placeholder="Nome Completo">
+                    <input class="cad_input" name="NomeUsuario" type="text" placeholder="Nome de Usuário">
+                    <input class="cad_input" name="Email" type="email" placeholder="Email">
+                    <input class="cad_input" name="Senha" type="password" placeholder="Senha">
+                    <button type="submit" class="cad_botao_cadastrar">Cadastre-se</button>
+                    <p class="cad_p_2">Ao se cadastrar, você concorda com nossos Termos, Política de Dados e Política de
+                        Cookies.</p>
+                </div>
+            </form>
         </section>
 
         <div class="cad_box_conta">
