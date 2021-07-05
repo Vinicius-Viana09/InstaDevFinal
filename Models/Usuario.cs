@@ -16,6 +16,7 @@ namespace InstaDevFinal.Models
         private string texto_post { get; set; }
 
         private int Id_post { get; set; }
+        private int Id_usuario { get; set; }
 
         public const string CAMINHO = "Database/post";
 

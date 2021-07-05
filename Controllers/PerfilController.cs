@@ -8,10 +8,8 @@ namespace InstaDevFinal.Controllers
         Usuario UsuarioModel = new Usuario();
         Post PostModel = new Post();
 
-        int Id_usuario {get; set;}
-
-        [Route("Index")]
-        public IActionResult Index()
+        [Route("Index/{Id_usuario}")]
+        public IActionResult Index(int Id_usuario)
         {
             ViewBag.Usuarios = UsuarioModel.LerTodosUsuarios(Id_usuario);
             ViewBag.Posts = UsuarioModel.LerTodosPost();
