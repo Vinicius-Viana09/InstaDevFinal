@@ -1,10 +1,3 @@
-<<<<<<< HEAD
-namespace InstaDevFinal.Models
-{
-    public class Usuario
-    {
-        
-=======
 using System.Collections.Generic;
 using System.IO;
 using InstaDevFinal.Interfaces;
@@ -73,6 +66,5 @@ namespace InstaDevFinal.Models
         {
             throw new System.NotImplementedException();
         }
->>>>>>> cadastro
     }
 }

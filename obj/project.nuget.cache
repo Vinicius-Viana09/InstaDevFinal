@@ -1,14 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "VWHVsoXYk7k7EIOyCIH029L9YDw938U2O1IT63LqdrM3JK5D65kPrE9HGOnF1ZBZXs09bOgVrC4ITeNZQmP74g==",
   "success": true,
   "projectFilePath": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-=======
-  "dgSpecHash": "ST8g3beKj29rwg0A9nfz5kq4+HwU9OmcTu1fpORrW1ckevJePclIbfcncWz9jR+OOQwpIQn+HcA+Sl4cqXYuVQ==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\dev\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
->>>>>>> cadastro
   "expectedPackageFiles": [],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
