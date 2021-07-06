@@ -14,11 +14,19 @@ namespace InstaDevFinal.Controllers
             return View();
         }
 
-        [Route("Alterar/{id}")]
-        public IActionResult Alterar(IFormCollection form, Usuario u)
+        [Route("Alterar")]
+        public IActionResult Alterar(IFormCollection form)
         {
-            usuarioModel.AlterarDados(u);
-            ViewBag.Usuario = usuarioModel.LerUsuarios();
+            Usuario novoUsuario = new Usuario();
+
+            novoUsuario.NomeCompleto = form[""];
+            novoUsuario.NomeUsuario = form[""];
+            novoUsuario.Email = form[""];
+
+            //usuarioModel.Cadastrar(novoUsuario);
+
+            ViewBag.Usuarios = usuarioModel.LerUsuarios();
+
             return LocalRedirect("~/");
         }
 

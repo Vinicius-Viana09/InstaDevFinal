@@ -48,10 +48,6 @@ namespace InstaDevFinal.Models
             return usuarios;
         }
 
-        internal void Create(Usuario novaUsuario)
-        {
-            throw new System.NotImplementedException();
-        }
 
         public void Criar(Usuario u)
         {
