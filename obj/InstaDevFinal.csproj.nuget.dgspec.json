@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {}
   },
   "projects": {
@@ -15,6 +16,22 @@
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
+=======
+    "C:\\Users\\dev\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\dev\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\dev\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
+        "projectName": "InstaDevFinal",
+        "projectPath": "C:\\Users\\dev\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
+        "packagesPath": "C:\\Users\\dev\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dev\\Desktop\\InstaDevFinal\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\dev\\AppData\\Roaming\\NuGet\\NuGet.Config"
+>>>>>>> cadastro
         ],
         "originalTargetFrameworks": [
           "net5.0"
