@@ -15,7 +15,7 @@ namespace InstaDevFinal.Controllers
         }
 
         [Route("Alterar/{id}")]
-        public IActionResult Alterar(Usuario u)
+        public IActionResult Alterar(IFormCollection form, Usuario u)
         {
             usuarioModel.AlterarDados(u);
             ViewBag.Usuario = usuarioModel.LerUsuarios();
