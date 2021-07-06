@@ -14,13 +14,21 @@ namespace InstaDevFinal.Controllers
             return View();
         }
 
-    
+        [Route("Alterar/{id}")]
+        public IActionResult Alterar(Usuario u)
+        {
+            usuarioModel.AlterarDados(u);
+            ViewBag.Usuario = usuarioModel.LerUsuarios();
+            return LocalRedirect("~/");
+        }
+
+
         [Route("Deletar/{id}")]
         public IActionResult Deletar(int id)
         {
             usuarioModel.DeletarConta(id);
             ViewBag.Usuario = usuarioModel.LerUsuarios();
-            return LocalRedirect("~/Excluir/Index");
+            return LocalRedirect("~/");
         }
     }
 
