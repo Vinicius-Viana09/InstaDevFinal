@@ -1,0 +1,302 @@
+
+
+
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: white;
+    height: 55px;
+    border: 1px solid #DCDCDC;
+}
+
+.container_header {
+    height: 56px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.container_header img {
+    height: 35px;
+    width: 130px;
+}
+
+.pesquisar {
+    border: 1px solid #DCDCDC;
+    background-color: #e9e8e839;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    font-size: 0.9em;
+    height: 20px;
+    width: 255px;
+    text-align: center;
+}
+
+.pesquisar_alinhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.cabeçalho img {
+    height: 27px;
+    width: 27px;
+}
+
+
+main {
+    background-color: #E5E5E5;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    width: 1400px;
+    margin: 0 auto;
+    display: flex;
+}
+
+
+.caixa-stories {
+    width: 610px;
+    margin-top: 50px;
+
+}
+
+.pessoas-online span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+    font-size: 14px;
+}
+
+.pessoas-online {
+    display: flex;
+    flex-direction: column;
+    margin: 15px;
+}
+
+.caixa-arrumar {
+    display: flex;
+    background-color: white;
+}
+
+.pessoas-online img {
+    width: 70px;
+    height: 70px;
+}
+
+.perfil-aside {
+    display: flex;
+}
+
+.perfil-aside-chaves {
+    width: 60px;
+    height: 60px;
+}
+
+.container-aside{
+    display: flex;
+    width: 1200px;
+    justify-content: center;
+}
+
+
+.teste-aside {
+    display: flex;
+    justify-content: center;
+
+}
+
+.box-perfil {
+    display: flex;
+    margin-top: 70px;
+    margin-left: 35px;
+}
+
+#perfil-aside-chave {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+
+#nome-verdadeiro-perfil {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #B6B6B6, 100%;
+}
+
+.nome-verds {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+
+
+
+
+
+
+
+
+.caixa-postar {
+    width: 610px;
+    height: 170px;
+    background: #ffffff;
+    margin-top: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+.perfil-postar {
+    display: flex;
+    margin: 20px;
+}
+
+.perfil-postar img {
+    width: 42px;
+    height: 42px;
+    margin-top: 20px;
+}
+
+.perfil-postar span {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.caixa-postar input {
+    background: #f3f1f1;
+    width: 220px;
+    height: 27px;
+    border: 1px;
+    border-radius: 5px;
+    margin-left: 27px;
+}
+
+#botao-imagem {
+    width: 157px;
+    height: 27px;
+    background: #D1D1D1;
+    border: 0px;
+    border-radius: 5px;
+    margin: 0 13px;
+    color: #7D7D7D, 100%;
+}
+
+#botao-postar {
+    background: #2686CC;
+    width: 140px;
+    height: 27px;
+    border: 0px;
+    border-radius: 5px;
+    color: white;
+}
+
+.caixa-post {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 610px;
+    height: 910px;
+    background: white;
+    
+}
+
+.perfil-post {
+    width: 58px;
+    height: 57px;
+    margin: 13px;
+}
+
+.spanzinho {
+    display: flex; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+#ronaldinho {
+    font-weight: bold;
+    margin-top: 20px;
+}
+.post-do-perfil {
+    width: 100%;
+    height: 610px;
+}
+
+.foto-ronaldinho {
+    margin-top: 30px;
+}
+
+.spanzao {
+    display: flex;
+    flex-direction: column;
+}
+
+.caixa-comentar {
+    margin-top: 10px;
+    margin-left: 20px;
+    display: flex;
+}
+
+#curtida {
+    margin-right: 19px;
+}
+
+#comentar {
+    margin-right: 17px;
+}
+
+.caixa-comentar input {
+    border: 0px;
+    width: 220px;
+}
+
+.caixa-comentar hr {
+    width: 220px;
+}
+
+#curtidas {
+    margin-top: 7px;
+    margin-left: 21px;
+}
+
+#numero-curtidas {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.comentarios {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 21px;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.comentarios a {
+    color: #2686CC;
+    text-decoration: none;
+    padding-right: 4px;
+}
+
+#comentario {
+    display: flex;
+    margin-bottom: 3px;
+}
+
+.perfil-comentario {
+    font-weight: 600;
+    padding-right: 8px;
+}
