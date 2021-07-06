@@ -19,8 +19,6 @@ namespace InstaDevFinal.Controllers
             Usuario novoUsuario = new Usuario();
             Random rdn = new Random();
 
-
-
             novoUsuario.IdUsuario = rdn.Next(999999999).ToString();
             novoUsuario.NomeCompleto = form["NomeCompleto"];
             novoUsuario.NomeUsuario = form["NomeUsuario"];
