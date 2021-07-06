@@ -1,0 +1,304 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/*header*/
+
+header {
+    background-color: white;
+    height: 55px;
+    border: 1px solid #DCDCDC;
+}
+
+.container_header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_header img {
+    height: 35px;
+    width: 130px;
+}
+
+.pesquisar {
+    border: 1px solid #DCDCDC;
+    background-color: #e9e8e839;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    font-size: 0.9em;
+    height: 20px;
+    width: 255px;
+    text-align: center;
+}
+
+.pesquisar_alinhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.cabeçalho img {
+    height: 27px;
+    width: 27px;
+}
+
+/*main*/
+
+/*quadro*/
+
+.container_informações {
+    background-color: #f5f5f5;
+    height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.quadro {
+    background-color: white;
+    border: 0.5px solid #DCDCDC;
+    height: 750px;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.quadro2 {
+    background-color: rgb(255, 255, 255);
+    border: 0.5px solid #DCDCDC;
+    width: 280px;
+    height: 749px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.editarPERFIL {
+    padding: 8.5%;
+    width: 350px;
+}
+
+hr {
+    height: 75px;
+    width: 3px;
+    background-color: black;
+}
+
+.quadro2 h2 {
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*informações*/
+
+.alterar_foto_allITENS {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 35px 404px 0 140px;
+}
+
+.foto_perfil img {
+    height: 60px;
+    width: 60px;
+}
+
+.foto_perfil button {
+    border: none;
+    background-color: white;
+}
+
+.alterar_foto {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+.alterar_foto button {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2686CC;
+    border: none;
+    background: none;
+}
+
+.coluna {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 11px;
+}
+
+.coluna label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.form {
+    display: flex;
+    justify-items: center;
+    flex-direction: column;
+}
+
+.nome_allITENS {
+    display: flex;
+    margin: 0px 32px 0 40px;
+    padding-top: 35px;
+}
+
+.asside_nome {
+    padding-left: 139px;
+    padding-right: 61px;
+    text-align: right;
+}
+
+.texto1 {
+    color: #909090;
+    margin-top: 10px;
+    width: 493px;
+}
+
+.texto2 {
+    color: #909090;
+    margin-top: 10px;
+    width: 493px;
+}
+
+.texto3 {
+    color: #909090;
+    margin-top: 10px;
+    width: 493px;
+}
+
+.pessoais {
+    margin-bottom: 4px;
+    font-weight: bold;
+}
+
+.texto3_ {
+    color: #909090;
+    margin-top: 38px;
+    width: 450px;
+}
+
+.nome_usuario {
+    display: flex;
+    margin: 0px 32px 0 40px;
+    padding-top: 35px;
+}
+
+.caixa_de_texto {
+    width: 466px;
+}
+
+.Marcos_Jeeves {
+    font-size: 16px;
+    border: 1px solid #DCDCDC;
+    height: 32px;
+    padding: 0 10px;
+    width: 470px;
+    border-radius: 3px;
+}
+
+.yes_baby {
+    font-size: 16px;
+    border: 1px solid #DCDCDC;
+    height: 32px;
+    padding: 0 10px;
+    width: 470px;
+    border-radius: 3px;
+}
+
+.yes_babyemail {
+    font-size: 16px;
+    border: 1px solid #DCDCDC;
+    height: 32px;
+    padding: 0 10px;
+    width: 470px;
+    border-radius: 3px;
+}
+
+.caixa_de_texto2 {
+    width: 539px;
+}
+
+.asside_usuário {
+    padding-left: 55px;
+    padding-right: 51px;
+    text-align: right;
+    line-height: 18px;
+    margin-top: 6px;
+}
+
+.email {
+    display: flex;
+    margin: 0px 32px 0 40px;
+    padding-top: 35px;
+}
+
+.asside_email {
+    padding-left: 140px;
+    padding-right: 66px;
+    text-align: right;
+}
+
+.enviar {
+    display: flex;
+    align-items: center;
+    margin: 70px;
+    margin-left: 292px;
+}
+
+.botao_enviar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;    
+    background: #2686CC;
+    width: 80px;
+    height: 30px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+}
+
+.desativar {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2686CC;
+    border: none;
+    background: none;
+    font-size: 15px;
+    margin-left: 160px;
+}
+
+
+/*footer*/
+
+footer .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.color {
+    padding-top: 50px;
+    height: 70px
+}
+
+footer p {
+    text-align: center;
+    color: #807c7c;
+}

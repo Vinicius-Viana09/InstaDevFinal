@@ -1,0 +1,115 @@
+@model Usuario
+@{
+
+    ViewData["Title"] = "Usuario";
+}
+<!DOCTYPE html>
+<html lang="pt.br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="~/css/style_alterarPERFIL.css">
+</head>
+
+<body>
+    <main class="cad_container">
+        <article class="container container_informações">
+            <div class="quadro">
+                <div class="quadro2">
+                    <hr>
+                    <div class="editarPERFIL">
+                        <h2>Editar Perfil</h2>
+                    </div>
+                </div>
+
+                <div class="coluna">
+                    <form method="POST" action='@Url.Action("")' enctype="multipart/form-data" class="form">
+                        <div class="alterar_foto_allITENS">
+                            <div class="foto_perfil">
+                                <button title="alterar foto perfil">
+                                    <img src="img/thank-you 2.png" alt="alterar foto perfil">
+                                </button>
+                            </div>
+                            <div class="alterar_foto">
+                                <h1>yes_baby</h1>
+                                <button>Alterar foto do perfil</button>
+                            </div>
+                        </div>
+
+                        <div class="nome_allITENS">
+                            <aside class="asside_nome">
+                                <label for="Name">Nome</label>
+                            </aside>
+                            <div class="caixa_de_texto">
+                                <div>
+                                    <input class="Marcos_Jeeves" type="text" name="Nome" placeholder="Nome de Usuario">
+                                    <div class="texto1">
+                                        <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é
+                                            conhecido:
+                                            seu
+                                            nome completo, apelido ou nome comercial.
+                                        </p>
+                                    </div>
+                                    <div class="texto2">
+                                        <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="nome_usuario">
+                            <aside class="asside_usuário">
+                                <label for="Name">Nome de usuário</label>
+                            </aside>
+                            <div class="caixa_de_texto2">
+                                <div>
+                                    <input class="yes_baby" type="text" name="NomeUsuario" placeholder="Nome de Usuario">
+                                    <div class="texto3">
+                                        <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para
+                                            nascimento_tr por mais 14 dias.
+                                        </p>
+                                        <div class="texto3_">
+                                            <div class="pessoais">
+                                                <p>Informações pessoais</p>
+                                            </div>
+                                            <p>
+                                                Forneça suas informações pessoais, mesmo se a conta for usada para uma
+                                                empresa, um animal de estimação ou outra coisa. Elas não farão parte do
+                                                seu
+                                                perfil público.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="email">
+                            <aside class="asside_email">
+                                <label for="Name">Email</label>
+                            </aside>
+                            <div>
+                                <input class="yes_babyemail" type="email" name="email" placeholder="Email">
+                            </div>
+                        </div>
+
+                        <div class="enviar">
+                            <div>
+                                <button class="botao_enviar" method="POST">Enviar</button>
+                                <button class="desativar" asp-area="" asp-controller="Index"
+                                    asp-action="Deletar">Desativar minha conta
+                                    definitivamente</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </article>
+</body>
+
+</html>
