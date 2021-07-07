@@ -3,7 +3,7 @@
     ViewData["Title"] = "Perfil";
 }
 
-@foreach (var item in ViewBag.Usuario)
+@foreach (var item in ViewBag.Usuarios)
 {
 
     <section class="container_perfil">
@@ -33,23 +33,23 @@
     </div>
 
     <div class="publi">
-        <img src="assets/publicacoes.png" alt="">
+        <img src="~/assets/publicacoes.png" alt="">
         <span>Publicações</span>
     </div>
 
 
     <section class="container_post">
         <div class="box_post_organizacao">
-            @foreach (var coisa in ViewBag.Posts)
+            @if (ViewBag.Posts != null)
             {
-                @if (ViewBag.Posts != null)
+                @foreach (var coisa in ViewBag.Posts)
                 {
 
-                    <img src=@coisa.imagem alt="Foto do Post">
+                    <img src="@coisa.imagem" alt="Foto do Post">
                     <div class="box_post">
                         <div class="box_info_posts">
                             <div class="box_info_postagem">
-                                <img src="assets/thank-you 4.png" alt="Imagem de Perfil">
+                                <img src="~/assets/thank-you 4.png" alt="Imagem de Perfil">
                                 <div class="box_local_post">
                                     <span class="nome_usuario">@item.Nome</span>
                                     <span class="localizacao">Rio de Janeiro</span>
@@ -60,8 +60,8 @@
                             </div>
                         </div>
                         <div class="box_curtir">
-                            <img src="assets/like.png" alt="Like">
-                            <img src="assets/comentario.png" alt="Comentarios">
+                            <img src="~/assets/like.png" alt="Like">
+                            <img src="~/assets/comentario.png" alt="Comentarios">
                         </div>
 
                         <div class="box_texto_post">
@@ -75,30 +75,30 @@
                             <div class="ajustar_tamanho_comentario">
                                 <span class="nome_usuario_comentario">fausto_silva</span>
                                 <span class="comentario">Esse cara é fera bixo!!</span>
-                                <img src="assets/like.png" alt="Like">
+                                <img src="~/assets/like.png" alt="Like">
                             </div>
                             <div class="ajustar_tamanho_comentario">
                                 <span class="nome_usuario_comentario">yes_baby</span>
                                 <span class="comentario">thank you</span>
-                                <img src="assets/like.png" alt="Like">
+                                <img src="~/assets/like.png" alt="Like">
                             </div>
                             <div class="ajustar_tamanho_comentario">
                                 <span class="nome_usuario_comentario">adriano_stark</span>
                                 <span class="comentario">Quando eu adormecer vou sonhar com você. É sempre você</span>
-                                <img src="assets/like.png" alt="Like">
+                                <img src="~/assets/like.png" alt="Like">
                             </div>
                             <div class="ajustar_tamanho_comentario">
                                 <span class="nome_usuario_comentario">yes_baby</span>
                                 <span class="comentario">Yes baby!!</span>
-                                <img src="assets/like.png" alt="Like">
+                                <img src="~/assets/like.png" alt="Like">
                             </div>
                         </div>
                     </div>
                 }
-                else
-                {
-                    <span class="box_sem_publi">Esse perfil ainda não fez nenhuma publicação</span>
-                }
+            }
+            else
+            {
+                <span class="box_sem_publi">Esse perfil ainda não fez nenhuma publicação</span>
             }
         </div>
     </section>

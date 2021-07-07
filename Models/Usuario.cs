@@ -7,16 +7,16 @@ namespace InstaDevFinal.Models
 {
     public class Usuario : InstaDevBase, IUsuario
     {
-        private string Nome { get; set; }
+        public string Nome { get; set; }
 
-        private string Username { get; set; }
-        
-        private string imagem { get; set; }
+        public string Username { get; set; }
 
-        private string texto_post { get; set; }
+        public string imagem { get; set; }
 
-        private string Id_post { get; set; }
-        private string Id_usuario { get; set; }
+        public string texto_post { get; set; }
+
+        public string Id_post { get; set; }
+        public string Id_usuario { get; set; }
 
         public const string CAMINHO = "Database/post.csv";
 
@@ -25,7 +25,7 @@ namespace InstaDevFinal.Models
         public Usuario()
         {
             CriarPastaEArquivo(CAMINHO);
-            
+
         }
 
         /* private string PrepararLinha(Post j)
@@ -65,7 +65,7 @@ namespace InstaDevFinal.Models
             }
             return posts;
         } */
-        public List<Usuario> LerTodosUsuarios( int Id_usuario )
+        public List<Usuario> LerTodosUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();
             string[] linhas_usuario = File.ReadAllLines(CAMINHO2);
@@ -73,15 +73,12 @@ namespace InstaDevFinal.Models
             foreach (var item in linhas_usuario)
             {
                 string[] linha = item.Split(";");
-                if (linha[0] == Id_usuario.ToString())
-                {   
                 Usuario usuario_dados = new Usuario();
                 usuario_dados.Id_usuario = linha[0];
                 usuario_dados.Nome = linha[1];
                 usuario_dados.Username = linha[2];
-                
+
                 usuarios.Add(usuario_dados);
-                }
 
             }
             return usuarios;

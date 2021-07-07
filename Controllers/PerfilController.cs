@@ -3,16 +3,15 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDevFinal.Controllers
 {
-    [Route("Perfil")]
     public class PerfilController : Controller
     {
         Usuario UsuarioModel = new Usuario();
         Post PostModel = new Post();
 
-        [Route("Index/{Id_usuario}")]
-        public IActionResult Index(int Id_usuario)
+        [Route("Perfil/Index")]
+        public IActionResult Index()
         {
-            ViewBag.Usuarios = UsuarioModel.LerTodosUsuarios(Id_usuario);
+            ViewBag.Usuarios = UsuarioModel.LerTodosUsuarios();
             ViewBag.Posts = PostModel.LerTodosPost();
             /* return LocalRedirect("~/Perfil/Index"); */
             return View();
