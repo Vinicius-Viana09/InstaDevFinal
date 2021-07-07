@@ -1,0 +1,106 @@
+@model Usuario
+@{
+    ViewData["Title"] = "Edição de Perfil";
+}
+
+<main class="cad_container">
+    <article class="container container_informações ">
+        <div class="quadro">
+            <div class="quadro2">
+                <hr>
+                <div class="editarPERFIL">
+                    <h2>Editar Perfil</h2>
+                </div>
+            </div>
+
+            <div class="coluna">
+                <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data"  class="form" >
+                    <div class="alterar_foto_allITENS">
+                        <div class="foto_perfil">
+                            <button title="">
+                                <img src="~/img/Usuarios/@ViewBag.FotoPerfil" alt="">
+                            </button>
+                        </div>
+                        <div class="alterar_foto">
+                            <h1>@ViewBag.NomeCompleto</h1>
+                            <form>
+                                <div>
+                                    <label class="Alterarfoto" for="arquivo">Alterar Foto do perfil</label>
+                                    <input type="file" name="arquivo" id="arquivo">
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="nome_allITENS">
+                        <aside class="asside_nome">
+                            <label class="label1" for="Name">Nome</label>
+                        </aside>
+                        <div class="caixa_de_texto">
+                            <div>
+                                <input class="Marcos_Jeeves" type="text" name="Nome"
+                                    placeholder=@ViewBag.NomeCompleto>
+                                <div class="texto1">
+                                    <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é
+                                        conhecido:
+                                        seu
+                                        nome completo, apelido ou nome comercial.
+                                    </p>
+                                </div>
+                                <div class="texto2">
+                                    <p>Você pode alterar o seu nome apenas duas vezes a cada 14 dias.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="nome_usuario">
+                        <aside class="asside_usuário">
+                            <label class="label2" for="Name">Nome de usuário</label>
+                        </aside>
+                        <div class="caixa_de_texto2">
+                            <div>
+                                <input class="yes_baby" type="text" name="NomeUsuario" placeholder=@ViewBag.NomeUsuario>
+                                <div class="texto3">
+                                    <p>Na maioria dos casos, você poderá alterar seu nome de usuário novamente para
+                                        nascimento_tr por mais 14 dias.
+                                    </p>
+                                    <div class="texto3_">
+                                        <div class="pessoais">
+                                            <p>Informações pessoais</p>
+                                        </div>
+                                        <p>
+                                            Forneça suas informações pessoais, mesmo se a conta for usada para uma
+                                            empresa, um animal de estimação ou outra coisa. Elas não farão parte do
+                                            seu
+                                            perfil público.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="email">
+                        <aside class="asside_email">
+                            <label class="label3" for="Name">Email</label>
+                        </aside>
+                        <div>
+                            <input class="yes_babyemail" type="email" name="email" placeholder=@ViewBag.Email>
+                        </div>
+                    </div>
+
+                    <div class="enviar">
+                        <div>
+                            <button class="botao_enviar">Enviar</button>
+                            <button class="desativar" asp-area="" asp-controller="Cadastro" asp-action="Desativar">Desativar
+                                minha conta
+                                definitivamente</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+</main>
