@@ -1,37 +1,20 @@
 {
   "format": 1,
   "restore": {
-<<<<<<< HEAD
-    "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {}
+    "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {
+    "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
+        "projectUniqueName": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj",
         "projectName": "InstaDevFinal",
-        "projectPath": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-        "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\obj\\",
+        "projectPath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj",
+        "packagesPath": "C:\\Users\\guilherme_2\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-    "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {}
-  },
-  "projects": {
-    "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-        "projectName": "InstaDevFinal",
-        "projectPath": "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-        "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\user\\Desktop\\InstaDevFinal\\obj\\",
-        "projectStyle": "PackageReference",
-        "configFilePaths": [
-          "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> origin/PerfilAlterar
+          "C:\\Users\\guilherme_2\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
@@ -72,11 +55,7 @@
               "privateAssets": "all"
             }
           },
-<<<<<<< HEAD
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
-=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> origin/PerfilAlterar
         }
       }
     }

@@ -1,21 +1,15 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "VWHVsoXYk7k7EIOyCIH029L9YDw938U2O1IT63LqdrM3JK5D65kPrE9HGOnF1ZBZXs09bOgVrC4ITeNZQmP74g==",
+  "dgSpecHash": "AlDMZ1RmUcliCCNaur1/l+KzRtDYPOuKSqbU2qtMS0slwxsPtzdmrIr2bvRnzSZMZ5I2XS+F4Q+2NLodfjEk7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-=======
-  "dgSpecHash": "qOrvY1wM1rq2yReznTHCD4OOjCdDy4pizBT5jpne67TGtfsyNaKDWzbjYCZDdMEeVIZrZjavO4O3M9XpHuK5uw==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
->>>>>>> origin/PerfilAlterar
+  "projectFilePath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj",
   "expectedPackageFiles": [],
   "logs": [
     {
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }

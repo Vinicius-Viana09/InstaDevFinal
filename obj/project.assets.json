@@ -8,34 +8,19 @@
     "net5.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\Usuario\\.nuget\\packages\\": {}
-=======
-    "C:\\Users\\user\\.nuget\\packages\\": {}
->>>>>>> origin/PerfilAlterar
+    "C:\\Users\\guilherme_2\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
+      "projectUniqueName": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj",
       "projectName": "InstaDevFinal",
-      "projectPath": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-      "packagesPath": "C:\\Users\\Usuario\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\obj\\",
+      "projectPath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\InstaDevFinal.csproj",
+      "packagesPath": "C:\\Users\\guilherme_2\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Usuario\\AppData\\Roaming\\NuGet\\NuGet.Config"
-=======
-      "projectUniqueName": "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-      "projectName": "InstaDevFinal",
-      "projectPath": "C:\\Users\\user\\Desktop\\InstaDevFinal\\InstaDevFinal.csproj",
-      "packagesPath": "C:\\Users\\user\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\user\\Desktop\\InstaDevFinal\\obj\\",
-      "projectStyle": "PackageReference",
-      "configFilePaths": [
-        "C:\\Users\\user\\AppData\\Roaming\\NuGet\\NuGet.Config"
->>>>>>> origin/PerfilAlterar
+        "C:\\Users\\guilherme_2\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
@@ -76,11 +61,7 @@
             "privateAssets": "all"
           }
         },
-<<<<<<< HEAD
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.301\\RuntimeIdentifierGraph.json"
-=======
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
->>>>>>> origin/PerfilAlterar
       }
     }
   },
@@ -89,7 +70,7 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Problema ao ler o arquivo de cache C:\\Users\\Usuario\\Desktop\\InstaDevFinal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
+      "message": "Problema ao ler o arquivo de cache C:\\Users\\guilherme_2\\Documents\\trabalhos do leo\\Senai\\TUDO DE C#\\InstaDevFinal\\obj\\project.nuget.cache: Invalid property identifier character: <. Path 'version', line 3, position 0."
     }
   ]
 }
