@@ -29,7 +29,7 @@ namespace InstaDevFinal.Models
 
         private string PrepararLinha(Usuario u)
         {
-            return $"{u.Id_usuario};{u.Nome};{u.Username};{u.Email};{u.Senha}";
+            return $"{u.Id_usuario};{u.Nome};{u.Username};{u.Email};{u.Senha};{u.Foto}";
         }
         public void Criar(Usuario u)
         {

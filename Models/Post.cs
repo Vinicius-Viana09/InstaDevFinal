@@ -10,17 +10,21 @@ namespace InstaDevFinal.Models
         public string Id_post { get; set; }
         public string Username { get; set; }
         public const string CAMINHO = "DataBase/feed";
-         public Post (){
+        
+        public Post (){
             CriarPastaEArquivo(CAMINHO);
         }
+
         public string PrepararLinha (Post P){
             return $"{P.imagem};{P.texto_post};{P.Id_post}";
         }
+
         public void PostarPost (Post P){
             string[] linha = {PrepararLinha(P)};
             File.AppendAllLines(CAMINHO, linha);
         }
-        public List<Post> LerTodos (){
+
+        /* public List<Post> LerTodos (){
             List<Post> posts = new List<Post>();
             string[] linhas = File.ReadAllLines(CAMINHO);
             foreach (var item in linhas)
@@ -33,7 +37,7 @@ namespace InstaDevFinal.Models
                 novoPost.Id_post = linha[2];
             }
             return posts;
-        }
+        } */
 
         public List<Post> LerTodosPost()
         {
