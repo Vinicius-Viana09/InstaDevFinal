@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\Usuario\Desktop\InstaDevFinal\bin\Debug\net5.0\appsettings.Development.json
 C:\Users\Usuario\Desktop\InstaDevFinal\bin\Debug\net5.0\appsettings.json
 C:\Users\Usuario\Desktop\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.exe
@@ -39,6 +40,19 @@ C:\Users\Usuario\Desktop\InstaDevFinal\obj\Debug\net5.0\ref\InstaDevFinal.dll
 C:\Users\Usuario\Desktop\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.pdb
 C:\Users\Usuario\Desktop\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.genruntimeconfig.cache
 C:\Users\Usuario\Desktop\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.csproj.CopyComplete
+=======
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\appsettings.Development.json
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\appsettings.json
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.exe
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.deps.json
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.runtimeconfig.json
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.runtimeconfig.dev.json
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.dll
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\ref\InstaDevFinal.dll
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.pdb
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.Views.dll
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\bin\Debug\net5.0\InstaDevFinal.Views.pdb
+>>>>>>> origin/Perfil
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.csprojAssemblyReference.cache
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.AssemblyInfoInputs.cache
@@ -53,6 +67,7 @@ C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\o
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.TagHelpers.input.cache
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.TagHelpers.output.cache
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.RazorCoreGenerate.cache
+<<<<<<< HEAD
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.dll
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\ref\InstaDevFinal.dll
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.pdb
@@ -73,6 +88,11 @@ C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\o
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Login\Index.cshtml.g.cs
+=======
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Home\Index.cshtml.g.cs
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Home\Privacy.cshtml.g.cs
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Perfil\Index.cshtml.g.cs
+>>>>>>> origin/Perfil
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Shared\Error.cshtml.g.cs
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -81,5 +101,11 @@ C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\o
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.RazorTargetAssemblyInfo.cache
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.RazorTargetAssemblyInfo.cs
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.Views.pdb
+<<<<<<< HEAD
+=======
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.dll
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\ref\InstaDevFinal.dll
+C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.pdb
+>>>>>>> origin/Perfil
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.genruntimeconfig.cache
 C:\Users\guilherme_2\Documents\trabalhos do leo\Senai\TUDO DE C#\InstaDevFinal\obj\Debug\net5.0\InstaDevFinal.csproj.CopyComplete

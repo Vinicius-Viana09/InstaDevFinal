@@ -1,30 +1,34 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - InstaDevFinal</title>
+    <title>@ViewData["Title"] - Instadev</title>
     <link rel="stylesheet" href="~/css/style_alterarPERFIL.css" />
+    <script src="https://kit.fontawesome.com/4fc272cd61.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="~/css/Estilo_Per.css">
 </head>
+
 <body>
-    <header>
-        <div class="container container_header">
-            <img src="img/Instadev.png" alt="logo.Instadev">
-            <div class="pesquisar_alinhar">
-                <form action="#" method="post">
-                    <input class="pesquisar" type="text" name="serach" id="serach" placeholder=" Pesquisar" required>
-                </form>
-            </div>
-            <nav class="cabeçalho">
-                <a asp-area="" asp-controller="Feed" asp-action="Index"><img src="img/home.png" alt=""></a>
-                <a href="#"><img src="img/direct.png" alt=""></a>
-                <a href="#"><img src="img/pesquisa.png" alt=""></a>
-                <a href="#"><img src="img/like.png" alt=""></a>
-                <a href="#"><img src="img/user.png" alt=""></a>
-            </nav>
+     <header>
+        <div class="logo"><img src="~/assets/Instadev.png" alt="logo"></div>
+
+        <div class="pesquisa">
+            <form action="">
+                <input type="text" name="" class="pesquisa_usuarios" placeholder="Pesquisar">
+            </form>
+        </div>
+
+        <div class="menu">
+            <a asp-area="" asp-controller="Feed" asp-action="Index"><img src="~/assets/home.png" alt="Home"></a>
+            <img src="~/assets/direct.png" alt="Direct">
+            <img src="~/assets/compass 1.png" alt="Compass">
+            <i class="far fa-heart"></i>
+            <i class="fas fa-user-circle"></i>
         </div>
     </header>
-    <div class="container">
+    <div>
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
@@ -40,4 +44,5 @@
     <script src="~/js/site.js" asp-append-version="true"></script>
     @await RenderSectionAsync("Scripts", required: false)
 </body>
+
 </html>

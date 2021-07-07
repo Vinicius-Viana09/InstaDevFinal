@@ -19,12 +19,12 @@ namespace InstaDevFinal.Controllers
         {
             Usuario novoUsuario = new Usuario();
 
-            novoUsuario.NomeCompleto = form[""];
-            novoUsuario.NomeUsuario = form[""];
+            novoUsuario.Nome = form[""];
+            novoUsuario.Username = form[""];
             novoUsuario.Email = form[""];
 
             //usuarioModel.Cadastrar(novoUsuario);
-            ViewBag.Usuarios = usuarioModel.LerUsuarios();
+            ViewBag.Usuarios = usuarioModel.LerTodosUsuarios();
 
             if (form.Files.Count > 0)
             {
@@ -42,11 +42,11 @@ namespace InstaDevFinal.Controllers
                     file.CopyTo(stream);
                 }
 
-                novoUsuario.Imagem = file.FileName;
+                novoUsuario.Foto = file.FileName;
             }
             else
             {
-                novoUsuario.Imagem = "padrao.png";
+                novoUsuario.Foto = "padrao.png";
             }
 
             usuarioModel.AlterarDados(novoUsuario);
@@ -59,7 +59,7 @@ namespace InstaDevFinal.Controllers
         public IActionResult Deletar(int id)
         {
             usuarioModel.DeletarConta(id);
-            ViewBag.Usuario = usuarioModel.LerUsuarios();
+            ViewBag.Usuario = usuarioModel.LerTodosUsuarios();
             return LocalRedirect("~/");
         }
     }

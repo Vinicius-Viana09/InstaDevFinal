@@ -10,7 +10,7 @@ namespace InstaDevFinal.Controllers
         Usuario Usuariomodel = new Usuario();
         public IActionResult index(){
             ViewBag.Posts = Postmodel.LerTodos();
-            ViewBag.Usuarios = Usuariomodel.LerUsuarios();
+            ViewBag.Usuarios = Usuariomodel.LerTodosUsuarios();
             return View();
         }
 
