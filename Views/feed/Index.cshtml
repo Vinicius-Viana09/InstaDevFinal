@@ -1,0 +1,143 @@
+@model Post
+@{
+    ViewData["Title"] = "Feed";
+}
+
+@foreach (var item in ViewBag.Usuarios)
+{
+
+    <div class="teste-aside">
+        <section class="container container-aside">
+            <div class="stories caixa-stories">
+                <div class="caixa-arrumar">
+                    <div class="pessoas-online">
+                        <img src="@item.image" alt="">
+                        <span>@item.Nome</span>
+                    </div>
+                </div>
+
+                <section>
+                    <div class="caixa-postar">
+                        <div class="perfil-postar">
+                            <img src="stories/gabigordo 1.png" alt="">
+                            <span>Postar</span>
+                        </div>
+                        <div>
+                            <input type="text" placeholder="Digite a descrição da imagem...">
+                            <button id="botao-imagem"> Escolha a imagem</button>
+                            <button id="botao-postar"> Postar </button>
+
+                        </div>
+                    </div>
+                </section>
+                @foreach (var coisa in ViewBag.Posts)
+                {
+                    <section>
+
+                        <div class="caixa-post">
+                            <div class="spanzinho">
+                                <img class="perfil-post" src="stories/pele-perfil.png" alt="">
+                                <div class="spanzao">
+                                    <span id="ronaldinho"> King_pele </span>
+                                    <span>@coisa.textopost </span>
+                                </div>
+                            </div>
+
+                            <div>
+                                <img class="post-do-perfil" src="@coisa.image" alt="">
+                            </div>
+
+                            <div class="caixa-comentar">
+                                <img id="curtida" src="post/Vector.png" alt="">
+                                <img id="comentar" src="post/Vector-1.png" alt="">
+                                <div class="aba-comentar">
+                                    <input type="text" placeholder="Comentar...">
+                                    <hr>
+                                </div>
+                            </div>
+
+                            <div id="curtidas">
+                                <span id="numero-curtidas"> 5387 curtidas</span>
+                            </div>
+
+                            <div class="comentarios">
+                                <div id="comentario">
+                                    <span class="perfil-comentario">King_pele</span>
+                                    <a href="">#R10</a>
+                                    <p> Curvem - se perante o rei</p>
+                                </div>
+
+                                <div id="comentario">
+                                    <span class="perfil-comentario">yes_baby</span>
+                                    <p>nem te conheço, thank you</p>
+                                </div>
+
+                                <div id="comentario">
+                                    <span class="perfil-comentario">Ronaldo</span>
+                                    <p>Ja estou me curvando, meu rei</p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                }
+
+                <section>
+                    <div class="caixa-post">
+                        <div class="spanzinho">
+                            <img class="perfil-post" src="stories/ronaldoinho gorducho.png" alt="">
+                            <div class="spanzao">
+                                <span id="ronaldinho"> RonaldoinhoFeiucho </span>
+                                <span> Bar da esquina, SP</span>
+                            </div>
+                        </div>
+
+                        <div>
+                            <img class="post-do-perfil" src="post/Captura de tela 2021-06-25 113458.png" alt="">
+                        </div>
+
+                        <div class="caixa-comentar">
+                            <img id="curtida" src="post/Vector.png" alt="">
+                            <img id="comentar" src="post/Vector-1.png" alt="">
+                            <div class="aba-comentar">
+                                <input type="text" placeholder="Comentar...">
+                                <hr>
+                            </div>
+                        </div>
+
+                        <div id="curtidas">
+                            <span id="numero-curtidas">777 curtidas</span>
+                        </div>
+
+                        <div class="comentarios">
+                            <div id="comentario">
+                                <span class="perfil-comentario">Gabigordo</span>
+                                <a href="">#R10</a>
+                                <p> O mais brabo de todos!!</p>
+                            </div>
+
+                            <div id="comentario">
+                                <span class="perfil-comentario">Will_baiano</span>
+                                <p>Eu lembro desse dia, vc tava em Bel-Air cmg</p>
+                            </div>
+
+                            <div id="comentario">
+                                <span class="perfil-comentario">King_pele</span>
+                                <p>Esse era pra ser meu sucessor, mas estragou a carreira no galo</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <div class="box-perfil">
+                <div class="perfil-aside-chaves">
+                    <img src="stories/chaves_metal 1.png" alt="">
+                </div>
+                <div class="nome-verds">
+                    <a id="perfil-aside-chave" href="">chaves_metal</a>
+                    <span id="nome-verdadeiro-perfil"> Chaves Bolaños</span>
+                </div>
+            </div>
+        </section>
+    </div>
+}

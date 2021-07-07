@@ -1,0 +1,54 @@
+*{
+    margin: 0%;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+/*header*/
+
+header {
+    background-color: white;
+    height: 55px;
+    border: 1px solid #DCDCDC;
+}
+
+.container_header {
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container_header img {
+    height: 35px;
+    width: 130px;
+}
+
+.pesquisar {
+    border: 1px solid #DCDCDC;
+    background-color: #e9e8e839;
+    border-radius: 0.2em;
+    padding: 0.2em;
+    font-size: 0.9em;
+    height: 20px;
+    width: 255px;
+    text-align: center;
+}
+
+.pesquisar_alinhar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 25%;
+}
+
+.cabeçalho img {
+    height: 27px;
+    width: 27px;
+}

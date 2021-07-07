@@ -1,0 +1,179 @@
+*{
+    margin:0%;
+    padding:5%;
+    box-sizing:border-box;
+    background: #E5E5E5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+div{
+    background: #FFFFFF;
+}
+.bloco-1{
+    background: #ffffff;
+    border: 1px solid #F1F1F1;
+    box-sizing: border-box;
+    left: 350px;
+    top: 162px;
+    position: absolute;
+    width: 342px;
+    height: 380px;
+}
+
+.logo{
+    Width: 170px;
+    Height: 75px;
+    background: #ffffff;
+    margin-left: 34px;
+}
+
+.informações-de-login{
+    Width: 267px;
+    Height: 35px;
+    background: #FAFAFA;
+    border: 1px solid #DCDCDC;
+    box-sizing: border-box;
+    border-radius: 2px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 15px;
+    color: #AFAFAF;
+    margin-left: -18px;
+}
+
+.senha{
+    margin-top: -15px;
+}
+
+.botao-entrar{
+    width: 267px;
+    height: 30px;
+    background: #2686CC;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -5px;
+}
+
+.botao-entrar a{
+    background: #2686CC;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+h2 {
+    background: #FFFFFF;
+    display: flex;
+    margin-left: 106px;
+    margin-top: -36px;
+    color: #909090;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+}
+
+a{
+    background: #FFFFFF;
+    text-decoration: none;
+}
+
+.bloco-1 a{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 6px;
+}
+
+.linha-1{
+    width: 109px;
+    height: 0px;
+    display: flex;
+    margin-top: 15px;
+    margin-left: 0px;
+    border: 1px solid #CBCBCB;
+    transform: matrix(1, 0, -2, -0.02, 0, 0);
+    background: #CBCBCB;
+}
+
+.linha-2{
+    width: 109px;
+    height: 0px;
+    display: flex;
+    margin-top: -29px;
+    margin-left: 167px;
+    border: 1px solid #CBCBCB;
+    transform: matrix(1, 0, -2, -0.02, 0, 0);
+    background: #CBCBCB;
+}
+
+.esqueceu-senha{
+    margin-left: 65px;
+    margin-top: 8px;
+    display: flex
+}
+
+.bloco-2{
+    position: absolute;
+    width: 342px;
+    height: 75px;
+    left: 350px;
+    top: 551px;
+    background: #FFFFFF;
+    border: 1px solid #F4F4F4;
+    box-sizing: border-box;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.nao-conta{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 16px;
+    color: #353535;
+    width: 223px;
+    height: 16px;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    margin-left: 18px;
+    margin-top: -10px;
+}
+
+.obtenha{
+    width: 217px;
+    height: 16px;
+    font-size: 12px;
+    line-height: 16px;
+    color: #353535;
+    display: flex;
+    margin-top: 495px;
+    margin-left: 299px;
+}
+
+.app-store-logo{
+    width: 230px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    margin-left: 184px;
+    margin-top: -143px;
+}
+
+.play-store-logo{
+    width: 253px;
+    height: 152px;
+    display: flex;
+    justify-content: center;
+    margin-left: 352px;
+    margin-top: -160px;
+}
+
+.a{
+    background: none;
+}
