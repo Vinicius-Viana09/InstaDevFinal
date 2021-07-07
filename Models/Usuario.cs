@@ -10,7 +10,7 @@ namespace InstaDevFinal.Models
         public string NomeCompleto { get; set; }
         public string NomeUsuario { get; set; }
         public string Senha { get; set; }
-
+        public string Imagem { get; set; }
         public string IdUsuario { get; set; }
 
         public const string CAMINHO = "Database/Usuario.csv";
@@ -25,7 +25,7 @@ namespace InstaDevFinal.Models
             return $"{u.IdUsuario};{u.NomeCompleto};{u.NomeUsuario};{u.Email};{u.Senha}";
         }
 
-        public List<Usuario> LerTodos()
+        public List<Usuario> LerUsuarios()
         {
             List<Usuario> usuarios = new List<Usuario>();
 
@@ -54,7 +54,7 @@ namespace InstaDevFinal.Models
             File.AppendAllLines(CAMINHO, linha);
         }
 
-        public void Alterar(Usuario u)
+        public void AlterarDados(Usuario u)
         {
             List<string> linhas_do_csv = LerTodasLinhasCSV(CAMINHO);
             linhas_do_csv.RemoveAll(item => item.Split(";")[0] == u.IdUsuario.ToString());
@@ -62,9 +62,11 @@ namespace InstaDevFinal.Models
             ReescreverCSV(CAMINHO, linhas_do_csv);
         }
 
-        public void Deletar(int IdUsuario)
+        public void DeletarConta(int Id)
         {
-            throw new System.NotImplementedException();
+            List<string> linhas = LerTodasLinhasCSV(CAMINHO);
+            linhas.RemoveAll(x => x.Split(";")[0] == IdUsuario.ToString());
+            ReescreverCSV(CAMINHO, linhas);
         }
     }
 }
