@@ -45,7 +45,7 @@ namespace InstaDevFinal.Models
             ReescreverCSV(CAMINHO, linhas_do_csv);
         }
 
-        public void DeletarConta(int Id)
+        public void DeletarConta(int Id_usuario)
         {
             List<string> linhas = LerTodasLinhasCSV(CAMINHO);
             linhas.RemoveAll(x => x.Split(";")[0] == Id_usuario.ToString());

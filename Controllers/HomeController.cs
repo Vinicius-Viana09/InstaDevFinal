@@ -65,5 +65,12 @@ namespace InstaDevFinal.Controllers
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
         }
+
+        [Route("Logout")]
+        public IActionResult Logout()
+        {
+            HttpContext.Session.Remove("Nome Usuario");
+            return LocalRedirect("~/Home");
+        }
     }
 }

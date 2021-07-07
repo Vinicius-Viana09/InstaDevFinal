@@ -55,10 +55,10 @@ namespace InstaDevFinal.Controllers
         }
 
 
-        [Route("Deletar/{id}")]
-        public IActionResult Deletar(int id)
+        [Route("Deletar/{Id_usuario}")]
+        public IActionResult Deletar(int Id_usuario)
         {
-            usuarioModel.DeletarConta(id);
+            usuarioModel.DeletarConta(Id_usuario);
             ViewBag.Usuario = usuarioModel.LerTodosUsuarios();
             return LocalRedirect("~/");
         }

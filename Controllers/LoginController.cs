@@ -42,11 +42,11 @@ namespace InstaDevFinal.Controllers
             return LocalRedirect("~/Login");
         }
  */
-        [Route("Logout")]
+        /* [Route("Logout")]
         public IActionResult Logout()
         {
             HttpContext.Session.Remove("Nome Usuario");
             return LocalRedirect("~/Login");
-        }
+        } */
     }
 }
