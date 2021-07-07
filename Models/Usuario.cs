@@ -11,11 +11,10 @@ namespace InstaDevFinal.Models
 
         public string Username { get; set; }
 
-        public string imagem { get; set; }
+        public string Senha { get; set; }
 
-        public string texto_post { get; set; }
+        public string Foto { get; set; }
 
-        public string Id_post { get; set; }
         public string Id_usuario { get; set; }
 
         public const string CAMINHO = "Database/post.csv";
@@ -34,7 +33,7 @@ namespace InstaDevFinal.Models
         } */
         private string PrepararLinha2(Usuario j)
         {
-            return $"{j.Nome};{j.Username};{j.Id_usuario}";
+            return $"{j.Nome};{j.Username};{j.Id_usuario};{j.Senha}";
         }
         public void Criar(Usuario j)
         {
@@ -73,10 +72,13 @@ namespace InstaDevFinal.Models
             foreach (var item in linhas_usuario)
             {
                 string[] linha = item.Split(";");
+
                 Usuario usuario_dados = new Usuario();
-                usuario_dados.Id_usuario = linha[0];
+                usuario_dados.Id_usuario = linha[0];   
                 usuario_dados.Nome = linha[1];
                 usuario_dados.Username = linha[2];
+                usuario_dados.Senha = linha[3];
+                usuario_dados.Foto = linha[4];
 
                 usuarios.Add(usuario_dados);
 
@@ -90,5 +92,19 @@ namespace InstaDevFinal.Models
             linhas_do_csv.RemoveAll(item => item.Split(";")[0] == Id_post.ToString());
             ReescreverCSV(CAMINHO, linhas_do_csv);
         } */
+
+        public Usuario ULogado(string Username){
+            List<Usuario> batata = LerTodosUsuarios();
+            Usuario batatinha_usuario = new Usuario();
+
+            foreach (Usuario item in batata)
+            {
+                if (item.Username == Username)
+                {
+                    return item;
+                }
+            }
+                return null;
+        }
     }
 }

@@ -23,10 +23,10 @@ namespace InstaDevFinal.Controllers
 
         public IActionResult Index()
         {
-            ViewBag.Usuarios = UsuarioModel.LerTodosUsuarios();
+            /* ViewBag.Usuarios = UsuarioModel.LerTodosUsuarios();
             ViewBag.Posts = PostModel.LerTodosPost();
-            return LocalRedirect("~/Perfil/Index");
-            /* return View(); */
+            return LocalRedirect("~/Perfil/Index"); */
+            return View(); 
         }
 
         public IActionResult Privacy()
