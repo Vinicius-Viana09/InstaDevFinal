@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDevFinal.Controllers
 {
+    [Route("Perfil")]
     public class PerfilController : Controller
     {
         Usuario UsuarioModel = new Usuario();
@@ -12,15 +13,16 @@ namespace InstaDevFinal.Controllers
         public IActionResult Index(int Id_usuario)
         {
             ViewBag.Usuarios = UsuarioModel.LerTodosUsuarios(Id_usuario);
-            ViewBag.Posts = UsuarioModel.LerTodosPost();
+            ViewBag.Posts = PostModel.LerTodosPost();
+            /* return LocalRedirect("~/Perfil/Index"); */
             return View();
         }
 
         [Route("Excluir/{Id_post}")]
         public IActionResult Excluir(int Id_post)
         {
-            UsuarioModel.Deletar(Id_post);
-            ViewBag.Usuarios = UsuarioModel.LerTodosPost();
+            PostModel.Deletar(Id_post);
+            ViewBag.Posts = PostModel.LerTodosPost();
             return LocalRedirect("~/Perfil/Index");
         }
     }
