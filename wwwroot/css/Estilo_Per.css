@@ -103,7 +103,7 @@ header{
     align-items: center;
 }
 
-hr{
+.linha_publi{
     border: 1px solid #DCDCDC;
     width: 926px;
 }

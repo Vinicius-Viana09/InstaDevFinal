@@ -97,7 +97,7 @@ header {
     width: 350px;
 }
 
-hr {
+.linha_alterar {
     height: 75px;
     width: 3px;
     background-color: black;

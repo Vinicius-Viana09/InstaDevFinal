@@ -1,9 +1,9 @@
 @model Usuario
 @{
     ViewData["Title"] = "Perfil";
-    Usuario batata = new Usuario();
+    Usuario Usuario = new Usuario();
     ViewBag.PostPerfil.Reverse();
-    Usuario User = batata.ULogado(ViewBag.User);
+    Usuario User = Usuario.ULogado(ViewBag.User);
 }
 
 @* @foreach (var item in ViewBag.PostPerfil)
@@ -32,7 +32,7 @@
     </section>
 
     <div class="linha">
-        <hr>
+        <hr class="linha_publi">
     </div>
 
     <div class="publi">
