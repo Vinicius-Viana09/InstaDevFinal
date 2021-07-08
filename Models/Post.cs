@@ -10,17 +10,20 @@ namespace InstaDevFinal.Models
         public string Id_post { get; set; }
         public string Username { get; set; }
         public const string CAMINHO = "Database/feed.csv";
-        
-        public Post (){
+
+        public Post()
+        {
             CriarPastaEArquivo(CAMINHO);
         }
 
-        public string PrepararLinha (Post P){
+        public string PrepararLinha(Post P)
+        {
             return $"{P.imagem};{P.texto_post};{P.Id_post};{P.Username}";
         }
 
-        public void PostarPost (Post P){
-            string[] linha = {PrepararLinha(P)};
+        public void PostarPost(Post P)
+        {
+            string[] linha = { PrepararLinha(P) };
             File.AppendAllLines(CAMINHO, linha);
         }
 
@@ -65,23 +68,25 @@ namespace InstaDevFinal.Models
             ReescreverCSV(CAMINHO, linhas_do_csv);
         }
 
-        public List<Post> PostPerfil(string username){
+        public List<Post> PostPerfil(string username)
+        {
 
-            List<Post> Todos_Posts = LerTodosPost();
+            List<Post> Todos_Posts = new List<Post>();
+            Todos_Posts = LerTodosPost();
 
             List<Post> Usuario_Posts = new List<Post>();
 
-            Usuario_Posts = Todos_Posts.Find(x => x.Username == username);
+            /* Usuario_Posts = Todos_Posts.Find(x => x.Username == username); */
 
-            // foreach (var item in Todos_Posts)
-            // {
-            //     if (item.Username == username)
-            //     {
-            //         Usuario_Posts.Add(item);
-            //     }
-            // }
+            foreach (var item in Todos_Posts)
+            {
+                if (item.Username == username)
+                {
+                    Usuario_Posts.Add(item);
+                }
+            }
 
-          return Usuario_Posts;
+            return Usuario_Posts;
         }
 
     }

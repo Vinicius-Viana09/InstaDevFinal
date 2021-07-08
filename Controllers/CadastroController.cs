@@ -24,6 +24,7 @@ namespace InstaDevFinal.Controllers
             novoUsuario.Nome = form["Nome"];
             novoUsuario.Username = form["Username"];
             novoUsuario.Senha = form["Senha"];
+            novoUsuario.Foto = "padrao.png";
 
             UsuarioModel.Criar(novoUsuario);
 

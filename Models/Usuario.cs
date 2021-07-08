@@ -14,7 +14,7 @@ namespace InstaDevFinal.Models
 
         public string Senha { get; set; }
 
-        public string Foto { get; set; }
+        public string Foto = "padrao.png";
 
         public string Id_usuario { get; set; }
 
