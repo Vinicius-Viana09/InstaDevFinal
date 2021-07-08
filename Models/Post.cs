@@ -16,7 +16,7 @@ namespace InstaDevFinal.Models
         }
 
         public string PrepararLinha (Post P){
-            return $"{P.imagem};{P.texto_post};{P.Id_post}";
+            return $"{P.imagem};{P.texto_post};{P.Id_post};{P.Username}";
         }
 
         public void PostarPost (Post P){
@@ -52,6 +52,7 @@ namespace InstaDevFinal.Models
                 post_dados.imagem = linha[0];
                 post_dados.texto_post = linha[1];
                 post_dados.Id_post = linha[2];
+                post_dados.Username = linha[3];
 
                 posts.Add(post_dados);
             }
@@ -70,13 +71,15 @@ namespace InstaDevFinal.Models
 
             List<Post> Usuario_Posts = new List<Post>();
 
-            foreach (var item in Todos_Posts)
-            {
-                if (item.Username == username)
-                {
-                    Usuario_Posts.Add(item);
-                }
-            }
+            Usuario_Posts = Todos_Posts.Find(x => x.Username == username);
+
+            // foreach (var item in Todos_Posts)
+            // {
+            //     if (item.Username == username)
+            //     {
+            //         Usuario_Posts.Add(item);
+            //     }
+            // }
 
           return Usuario_Posts;
         }

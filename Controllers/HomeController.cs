@@ -46,8 +46,7 @@ namespace InstaDevFinal.Controllers
 
             if (logado != null)
             {
-                HttpContext.Session.SetString("Username", logado.Split(";")[2
-                ]);
+                HttpContext.Session.SetString("Username", logado.Split(";")[2]);
                 return LocalRedirect("~/Feed");
             }
 

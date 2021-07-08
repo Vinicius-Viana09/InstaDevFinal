@@ -20,9 +20,9 @@ namespace InstaDevFinal.Controllers
             Random rdn = new Random();
 
             novoUsuario.Id_usuario = rdn.Next(999999999).ToString();
-            novoUsuario.Nome = form["NomeCompleto"];
-            novoUsuario.Username = form["NomeUsuario"];
             novoUsuario.Email = form["Email"];
+            novoUsuario.Nome = form["Nome"];
+            novoUsuario.Username = form["Username"];
             novoUsuario.Senha = form["Senha"];
 
             UsuarioModel.Criar(novoUsuario);

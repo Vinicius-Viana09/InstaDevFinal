@@ -7,14 +7,14 @@
     <article class="container container_informações ">
         <div class="quadro">
             <div class="quadro2">
-                <hr class="linha_alterar">
+                <hr class="linhaAlterar">
                 <div class="editarPERFIL">
                     <h2>Editar Perfil</h2>
                 </div>
             </div>
 
             <div class="coluna">
-                <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data"  class="form" >
+                <form method="POST" action='@Url.Action("Alterar")' enctype="multipart/form-data" class="form">
                     <div class="alterar_foto_allITENS">
                         <div class="foto_perfil">
                             <button title="">
@@ -23,12 +23,10 @@
                         </div>
                         <div class="alterar_foto">
                             <h1>@ViewBag.NomeCompleto</h1>
-                            <form>
-                                <div>
-                                    <label class="Alterarfoto" for="arquivo">Alterar Foto do perfil</label>
-                                    <input type="file" name="arquivo" id="arquivo">
-                                </div>
-                            </form>
+                            <div>
+                                <label class="Alterarfoto" for="arquivo">Alterar Foto do perfil</label>
+                                <input type="file" name="arquivo" class="foto_alterar" id="arquivo">
+                            </div>
                         </div>
                     </div>
 
@@ -38,8 +36,7 @@
                         </aside>
                         <div class="caixa_de_texto">
                             <div>
-                                <input class="Marcos_Jeeves" type="text" name="Nome"
-                                    placeholder=@ViewBag.NomeCompleto>
+                                <input class="Marcos_Jeeves" type="text" name="Nome" placeholder=@ViewBag.NomeCompleto>
                                 <div class="texto1">
                                     <p>Ajude as pessoas a descobrir sua conta usando o nome pelo qual você é
                                         conhecido:
@@ -93,10 +90,14 @@
 
                     <div class="enviar">
                         <div>
-                            <button class="botao_enviar">Enviar</button>
-                            <button class="desativar" asp-area="" asp-controller="Cadastro" asp-action="Desativar">Desativar
-                                minha conta
-                                definitivamente</button>
+                            @* @foreach (Usuario e in ViewBag.Usuario)
+                            {
+                            } *@
+                                <button class="botao_enviar">Enviar</button>
+                                <a class="desativar" asp-area="" asp-controller="Alterar" asp-action="Deletar"
+                                asp-route-Id="">Desativar
+                                    minha conta
+                                    definitivamente</a>
                         </div>
                     </div>
                 </form>
