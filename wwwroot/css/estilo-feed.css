@@ -163,7 +163,7 @@ header {
 }
 
 .perfil-postar span {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     padding: 10px;
     font-weight: bold;
     margin-top: 20px;
@@ -176,6 +176,13 @@ header {
     border: 1px;
     border-radius: 5px;
     margin-left: 27px;
+}
+.escolher_foto {
+    background: #f3f1f1;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.escolher-arquivo{
+    display: none;
 }
 
 /* #botao-imagem {

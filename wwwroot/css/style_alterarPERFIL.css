@@ -140,7 +140,7 @@ header {
 }
 
 
-input[type="file"] {
+.foto_alterar{
     display: none;
 }
 
