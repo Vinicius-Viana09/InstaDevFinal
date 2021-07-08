@@ -12,7 +12,7 @@ namespace InstaDevFinal.Controllers
         public IActionResult Index()
         {
             ViewBag.User = HttpContext.Session.GetString("Username");
-            ViewBag.PostPerfil = PostModel.PostPerfil(HttpContext.Session.GetString("Username"));
+            ViewBag.PostPerfil = PostModel.PostPerfil(HttpContext.Session.GetString("Username").ToString());
 
             if (ViewBag.User != null)
             {
