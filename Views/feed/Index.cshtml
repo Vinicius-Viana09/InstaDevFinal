@@ -21,18 +21,18 @@
                             <img src="stories/gabigordo 1.png" alt="">
                             <span>Postar</span>
                         </div>
+
                         <div>
-                            <form method="POST" action="Index">
+                            <form method="POST" action='@Url.Action("Postar")'>
                                 <input type="text" placeholder="Digite a descrição da imagem..." name="texto_post">
                                 <label for="Imagem_post" class="escolher_foto">Escolha uma Imagem</label>
                                 <input type="file" class="escolher-arquivo" id="Imagem_post" name="Imagem"> 
                                 <button id="botao-postar">Postar</button>
                             </form>
                         </div>
+
                     </div>
                 </section>
-                    <a asp-area="" asp-controller="Perfil" asp-action="Index">Perfil</a>
-                    <a asp-area="" asp-controller="Alterar" asp-action="Index">Alterar Perfil</a>
                 @foreach (var coisa in ViewBag.Posts)
                 {
                     <section>
@@ -137,7 +137,7 @@
                     <img src="stories/chaves_metal 1.png" alt="">
                 </div>
                 <div class="nome-verds">
-                    <a id="perfil-aside-chave" href="">chaves_metal</a>
+                    <a asp-area="" asp-controller="Perfil" asp-action="Index">chaves_metal</a>
                     <span id="nome-verdadeiro-perfil"> Chaves Bolaños</span>
                 </div>
             </div>

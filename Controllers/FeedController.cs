@@ -1,4 +1,6 @@
+using System;
 using InstaDevFinal.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace InstaDevFinal.Controllers
@@ -15,20 +17,20 @@ namespace InstaDevFinal.Controllers
             return View();
         }
 
-        // public IActionResult Postar()
-        // {
-        //     Jogador novoJogador = new Jogador();
-        //     novoJogador.Id_Jogador = Int32.Parse(form["IdJogador"]);
-        //     novoJogador.Id_Equipe = Int32.Parse(form["IdEquipe"]);
-        //     novoJogador.Nome = form["Nome"];
-        //     novoJogador.Email = form["Email"];
-        //     novoJogador.Senha = form["Senha"];
+        public IActionResult Postar(IFormCollection form)
+        {
+            Post novopost = new Post();
+            Random rdn = new Random();
+            
+            novopost.Id_post = rdn.Next(999999999).ToString();
+            novopost.texto_post = form["texto_post"];
+            novopost.imagem = form["Imagem"];
 
-        //     JogadorModel.Criar(novoJogador);
-        //     ViewBag.Jogadores = JogadorModel.LerTodos();
+            Postmodel.PostarPost(novopost);
+            ViewBag.Posts = Postmodel.LerTodosPost();
 
-        //     return LocalRedirect("~/Jogador/Index");
-        // }
+            return LocalRedirect("~/");
+        }
 
     }
 }
